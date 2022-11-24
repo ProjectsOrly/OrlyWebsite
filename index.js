@@ -13,15 +13,29 @@ const sendEmail = async (data) => {
   }
 };
 
-const contactUsButton = document.getElementById("contactUs");
+const contactUsButton = document.getElementById("submitMail");
 
-contactUsButton.addEventListener("click", () => {
+contactUsButton.addEventListener("click", async () => {
   const emailInput = document.getElementById("email");
-  const bodyInput = document.getElementById("body");
+  const bodyInput = document.getElementById("description");
   const data = {
     email: emailInput.value,
     body: bodyInput.value,
   };
 
-  sendEmail(data);
+  const afterSubmit = () => {
+    contactUsButton.firstElementChild.classList.add("hidden");
+    contactUsButton.disabled = true;
+    contactUsButton.style.opacity = 0.6;
+    contactUsButton.textContent = "Sent!";
+    contactUsButton.style.cursor = "default";
+  };
+
+  try {
+    contactUsButton.firstElementChild.classList.remove("hidden");
+    await sendEmail(data);
+    afterSubmit();
+  } catch (err) {
+    console.log(err);
+  }
 });

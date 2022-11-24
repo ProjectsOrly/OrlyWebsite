@@ -9,6 +9,8 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+.hidden{display: none !important;}
+
 .button {
   font-size: 30px;
   color: white;
@@ -16,6 +18,7 @@ body {
   border-radius: 10px;
   text-decoration: none;
   background-color: #00adb5;
+  cursor: pointer;
 }
 
 a {
@@ -98,7 +101,7 @@ lottie-player {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-top: 1px solid rgba(0, 0, 0, 0.10);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #about > section > div {
@@ -113,6 +116,45 @@ lottie-player {
   width: 30%;
   max-width: 400px;
 }
+
+#sendEmailContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 180px;
+  margin-bottom: 50px;
+}
+
+#sendEmailContainer > input , textarea {
+  border-radius: 5px;
+  border: 1px solid #00adb5;
+  padding: 8px;
+  resize: none;
+  margin: 8px 0 8px 0;
+  
+}
+
+input:focus { 
+  outline: none !important;
+  border-color: #00757b;
+  box-shadow: 0 0 5px #719ECE;
+}
+textarea:focus { 
+  outline: none !important;
+  border-color: #00757b;
+  box-shadow: 0 0 5px #719ECE;
+}
+
+#sendEmailContainer > button {
+  font-size: 15px;
+  font-weight: bold;
+  border-color: transparent;
+}
+
+
+
+
 
 
 @media (max-width: 850px) {
