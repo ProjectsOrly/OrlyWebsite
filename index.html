@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orly</title>
@@ -85,7 +86,24 @@
             <p>Well, this app was built for my mother (Orly) so with her in mind i said why not keep it free for everyone, enjoy :)</p>
           </div>
         </section>
+        
+        <section>
+          <lottie-player src="./animations/mailAnimation.json" loop autoplay></lottie-player>
+          <div>
+            <h2>Contact Us</h2>
+            <input
+            id="email"
+            placeholder="Your Email"
+          />
+          <input
+          id="body"
+          placeholder="Description"
+        />
+        <button id="contactUs" type="button">send</button>          </div>
+        </section>
       </div>
     </main>
   </body>
+  <script src="index.js"></script>
+
 </html>
