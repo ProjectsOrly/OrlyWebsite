@@ -133,6 +133,7 @@ lottie-player {
   resize: none;
   margin: 8px 0 8px 0;
   font-family: "Rubik";
+  transition: 0.3s;
 }
 
 input:focus { 
