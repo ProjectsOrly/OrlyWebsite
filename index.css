@@ -20,6 +20,16 @@ body {
   background-color: #00adb5;
   cursor: pointer;
 }
+.downloadContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+.downloadContainer > h6 {
+  margin-top: 5px;
+  margin-right: 5px;
+}
 
 a {
   transition: 0.2s;
@@ -116,45 +126,6 @@ lottie-player {
   width: 30%;
   max-width: 400px;
 }
-
-#sendEmailContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  min-height: 180px;
-  margin-bottom: 50px;
-}
-
-#sendEmailContainer > input , textarea {
-  border-radius: 5px;
-  border: 1px solid #00adb5;
-  padding: 8px;
-  resize: none;
-  margin: 8px 0 8px 0;
-  
-}
-
-input:focus { 
-  outline: none !important;
-  border-color: #00757b;
-  box-shadow: 0 0 5px #719ECE;
-}
-textarea:focus { 
-  outline: none !important;
-  border-color: #00757b;
-  box-shadow: 0 0 5px #719ECE;
-}
-
-#sendEmailContainer > button {
-  font-size: 15px;
-  font-weight: bold;
-  border-color: transparent;
-}
-
-
-
-
 
 
 @media (max-width: 850px) {

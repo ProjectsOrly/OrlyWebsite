@@ -31,7 +31,10 @@
           <a href="#about"> About Us </a>
         </li>
         <li>
-          <a class="button"> Download </a>
+          <a 
+          class="button"
+          href="https://github.com/ProjectsOrly/OrlyWebsite/raw/master/orlySetup.exe"
+          download="download"> Download </a>
         </li>
       </ul>
     </nav>
@@ -45,13 +48,15 @@
             will allow you to transfer images/videos to your computer in a click
             of a button, enjoy!
           </p>
-
-          <a
-            class="button"
-            href="https://github.com/ProjectsOrly/OrlyWebsite/raw/master/orlySetup.exe"
-            download="download"
-            >Download</a
-          >
+      <div class="downloadContainer">
+        <a
+        class="button"
+        href="https://github.com/ProjectsOrly/OrlyWebsite/raw/master/orlySetup.exe"
+        download="download"
+        >Download</a
+        >
+        <h6 >1.0.15</h6>
+      </div>
         </div>
 
         <lottie-player
@@ -134,21 +139,12 @@
             autoplay
           ></lottie-player>
 
-          <div id="sendEmailContainer">
-            <h2>Contact Us</h2>
-            <input id="email" placeholder="Your Email" />
-            <textarea
-              id="description"
-              cols="40"
-              rows="3"
-              placeholder="Description"
-            ></textarea>
-            <button id="submitMail" class="button" type="button">
-              <i  class="fa fa-refresh fa-spin hidden"></i>
-              Submit
-            </button>
-            
-          </div>
+          <footer>
+            <h3>Contact Us</h3>
+            <p>Please feel free to reach out to us for any questions or feature requests at <br> 
+              <a href="mailto:orlyteam@outlook.com"><strong>orlyteam@outlook.com</strong></a><br> We would love to hear from you!</p>
+
+          </footer>
         </section>
       </div>
     </main>
