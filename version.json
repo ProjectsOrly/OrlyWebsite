@@ -1,9 +1,0 @@
-{
-  "version" : "1.1.0",
-  "changes":[
-    "Can choose specific date to start sync media from",
-    "Better security",
-    "Improved performance",
-    "Bug fixes"
-  ]
-}
