@@ -14,9 +14,9 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <meta name="description" content="Transfer mobile images/videos to your computer in an instant!">
-    <meta name="keywords" content="image, video, transfer, upload, compression, secure, fast, safe, backup, photos">
-    <meta name="author" content="Orly Team">
+    <meta name="description" content="Transfer mobile images/videos to your computer in an instant!" />
+    <meta name="keywords" content="image, video, transfer, upload, compression, secure, fast, safe, backup, photos" />
+    <meta name="author" content="Orly Team" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orly - File Sync To PC</title>
@@ -26,13 +26,16 @@
       <h1>Orly</h1>
       <ul>
         <li>
-          <a href="#contactUs"> Contact Us </a>
+          <a href="#contactUs" aria-label="Navigate to Contact Us section"> Contact Us </a>
         </li>
         <li>
-          <a href="#about"> About Us </a>
+          <a href="#QA" aria-label="Navigate to Q&A"> Q&A </a>
         </li>
         <li>
-          <a href="./orlySetup.exe" class="button"> Download </a>
+          <a href="#about" aria-label="Navigate to About section"> About Us </a>
+        </li>
+        <li>
+          <a href="./orlySetup.exe" class="button" aria-label="Download Orly desktop application"> Download </a>
         </li>
       </ul>
     </nav>
@@ -42,51 +45,56 @@
         <div>
           <h1>Thank you for downloading</h1>
           <p>
-            Please download this desktop application in order to continue, This will allow you to transfer media and files
-            to your computer in a click of a button, enjoy!
+            Please download this desktop application in order to continue, This will allow you to transfer media and
+            files to your computer in a click of a button, enjoy!
           </p>
-      <div class="downloadContainer">
-        <a class="button" href="./orlySetup.exe">Download</a>
-        <h6 id="version"></h6>
-      </div>
+          <div class="downloadContainer">
+            <a class="button" href="./orlySetup.exe" aria-label="Download Orly desktop application">Download</a>
+            <h6 id="version"></h6>
+          </div>
         </div>
 
         <lottie-player src="./animations/mainAnimation.json" loop autoplay></lottie-player>
       </div>
 
-      <div id="about">
+      <section id="about">
         <h1>About</h1>
 
-        <section>
+        <article>
           <lottie-player src="./animations/aboutAnimation.json" loop autoplay></lottie-player>
           <div>
             <h2>Info</h2>
             <p>
-              The One-Click File Transfer App is the ultimate solution for effortless and organized file sync between your mobile phone and PC. Transfer any file type, including images, videos, music, and documents, using Wi-Fi with no middleware.            </p>
+              The One-Click File Transfer App is the ultimate solution for effortless and organized file sync between
+              your mobile phone and PC. Transfer any file type, including images, videos, music, and documents, using
+              Wi-Fi with no middleware.
+            </p>
           </div>
-        </section>
+        </article>
 
-        <section>
+        <article>
           <lottie-player src="./animations/lockAnimation.json" loop autoplay></lottie-player>
           <div>
             <h2>Security</h2>
             <p>
-              Your files are transferred directly to your PC with no third-party involvement, ensuring that only you have access to them.
+              Your files are transferred directly to your PC with no third-party involvement, ensuring that only you
+              have access to them.
             </p>
           </div>
-        </section>
+        </article>
 
-        <section>
+        <article>
           <lottie-player src="./animations/fastAnimation.json" loop autoplay></lottie-player>
           <div>
             <h2>It's really fast</h2>
             <p>
-              Experience lightning-fast transfer speeds without the need for cables or complicated setup procedures. Uploading your files is a breeze.
+              Experience lightning-fast transfer speeds without the need for cables or complicated setup procedures.
+              Uploading your files is a breeze.
             </p>
           </div>
-        </section>
+        </article>
 
-        <section>
+        <article>
           <lottie-player src="./animations/moneyAnimation.json" loop autoplay></lottie-player>
           <div>
             <h2>Free Without ads!</h2>
@@ -95,19 +103,80 @@
               everyone, enjoy :)
             </p>
           </div>
-        </section>
+        </article>
+      </section>
 
-        <section id="contactUs">
+      <section id="QA">
+        <h1>Q&A</h1>
+
+        <div class="questionBox">
+          <h2 class="accordion">How do I transfer files?</h2>
+          <p>
+            Once you have downloaded the desktop application, you will be able to transfer files from your mobile device
+            to your computer by simply clicking the "Start Upload" button on the mobile app. Just remember to adjust the settings to your liking first :)
+          </p>
+        </div>
+
+        <div class="questionBox">
+          <h2 class="accordion">I'm having trouble connecting my devices. What can I do?</h2>
+          <p>
+            If you're having trouble creating a connection between your devices, ensure that they are both connected to
+            the same Wi-Fi network. If that doesn't work, it's possible that your firewall is blocking the connection.
+            In that case, try adjusting your firewall settings to allow the connection.
+          </p>
+        </div>
+
+        <div class="questionBox">
+          <h2 class="accordion">Will the app delete any files from my mobile device?</h2>
+          <p>
+            No, the app does not have the ability to delete any files from your mobile device, nor do we wish to take
+            any responsibility for such actions.
+          </p>
+        </div>
+
+        <div class="questionBox">
+          <h2 class="accordion">I'm receiving a "Folder does not exist" error</h2>
+          <p>
+            There are a few possibilities for this error message. It could be that the folder truly does not exist, or
+            perhaps the folder was renamed. Additionally, it's possible that the folder is located in a location that
+            the desktop app cannot access, such as OneDrive or a similar service.
+          </p>
+        </div>
+
+        <div class="questionBox">
+          <h2 class="accordion">Is the app secure?</h2>
+          <p>
+            Yes, Your files are transferred directly from your computer to your phone via a local WiFi connection. This
+            means that your files remain solely within your personal devices and are not stored on any external servers
+            or clouds, Orly does not take any responsibility for any files that are transferred.
+          </p>
+        </div>
+
+        <div class="questionBox">
+          <h2 class="accordion">I accidentally deleted my connection</h2>
+          <p>
+            If you have accidentally deleted the connection from your mobile or computer, you can simply create a new
+            connection and adjust the sync date in your mobile settings to match the previous connection. This will
+            allow you to resume where you left off with ease.
+          </p>
+        </div>
+      </section>
+
+      <section id="contactUs">
+        <h1>Contact Us</h1>
+        <article id="contactUs">
           <lottie-player src="./animations/mailAnimation.json" loop autoplay></lottie-player>
 
           <footer>
-            <h3>Contact Us</h3>
-            <p>Please feel free to reach out to us for any questions or feature requests at <br> 
-              <a href="mailto:orlyteam@outlook.com"><strong>orlyteam@outlook.com</strong></a><br> We would love to hear from you!</p>
-
+            <p>
+              Please feel free to reach out to us for any questions or feature requests at <br />
+              <a href="mailto:orlyteam@outlook.com"><strong>orlyteam@outlook.com</strong></a
+              ><br />
+              We would love to hear from you!
+            </p>
           </footer>
-        </section>
-      </div>
+        </article>
+      </section>
     </main>
   </body>
 </html>
