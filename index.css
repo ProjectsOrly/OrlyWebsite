@@ -167,6 +167,11 @@ main > section > h1{
   transition: 0.2s ease-in-out;
 }
 
+#QA > .questionBox a {
+  color: #0045b5;
+  text-decoration: underline;
+}
+
 #QA > .questionBox > .active {
   max-height: 1000px;
   margin: 0 0 50px 0;
