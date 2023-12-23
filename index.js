@@ -19,4 +19,27 @@ questionBoxes.forEach(questionBox => {
   });
 });
 
+// Remove anchor tags from URL
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      var target = this.getAttribute("href").substring(1);
+      var targetElement = document.getElementById(target);
+
+      if (targetElement) {
+        var targetOffset = targetElement.offsetTop;
+
+        window.scrollTo({
+          top: targetOffset,
+          behavior: "smooth",
+        });
+
+        history.pushState("", document.title, window.location.pathname);
+      }
+    });
+  });
+});
+
 
